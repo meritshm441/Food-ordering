@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".R_Profile"
+    android:orientation="vertical"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/register_restaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restaurant Profile"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/propic"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        android:src="@drawable/ic_baseline_account_circle_24"/>
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Restaurant Name"
+        android:fontFamily="sans-serif-condensed"
+        android:textColorHint="@color/black"
+        />
+    <EditText
+        android:id="@+id/R_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColorHint="@color/black"
+        android:inputType="textEmailAddress"
+        android:fontFamily="sans-serif-condensed"/>
+
+
+    <EditText
+        android:id="@+id/relocation"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Location"
+        android:textColorHint="@color/black"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <EditText
+        android:id="@+id/rephone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:textColorHint="@color/black"
+        android:inputType="phone"
+        android:fontFamily="sans-serif-condensed"
+        />
+
+
+    <EditText
+        android:id="@+id/repass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:fontFamily="sans-serif-condensed"
+        android:backgroundTint="@color/black"
+        />
+
+    <Button
+        android:id="@+id/log_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Logout" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded_corner"
+            app:itemIconSize="30dp"
+            app:itemIconTint="@drawable/item_selector"
+            app:itemRippleColor="@android:color/transparent"
+            app:menu="@menu/bottom_menu" />
+
+    </LinearLayout>
+
+</LinearLayout>

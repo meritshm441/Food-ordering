@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Restaurant_Registration"
+
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restaurant Registration"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        android:src="@drawable/ic_baseline_account_circle_24"/>
+    <EditText
+        android:id="@+id/fullname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Restaurant Name"
+        android:fontFamily="sans-serif-condensed"
+        android:textColorHint="@color/black"
+        />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColorHint="@color/black"
+        android:inputType="textEmailAddress"
+        android:fontFamily="sans-serif-condensed"/>
+
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Location"
+        android:textColorHint="@color/black"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:textColorHint="@color/black"
+        android:inputType="phone"
+        android:fontFamily="sans-serif-condensed"
+        />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:textColorHint="@color/black" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_progressbar"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:fontFamily="sans-serif-condensed"
+        android:backgroundTint="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/signin_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? LogIn!"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed"
+        />
+
+</LinearLayout>

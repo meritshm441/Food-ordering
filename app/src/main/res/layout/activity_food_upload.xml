@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Food_Upload"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Food"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed"
+        />
+
+    <TextView
+        android:id="@+id/fullname"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="Restaurant Name"
+        android:fontFamily="sans-serif-condensed"
+        android:textColorHint="@color/black"/>
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="Email"
+        android:fontFamily="sans-serif-condensed"
+        android:textColorHint="@color/black"/>
+
+    <EditText
+        android:id="@+id/food_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Food Name"
+        android:fontFamily="sans-serif-condensed"
+        android:textColorHint="@color/black"
+        />
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:fontFamily="sans-serif-condensed"
+        android:textColorHint="@color/black"
+        />
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:fontFamily="sans-serif-condensed"
+        android:textColorHint="@color/black"
+        />
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="Phone Number"
+        android:fontFamily="sans-serif-condensed"
+        android:textColorHint="@color/black"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="50dp">
+        <ImageView
+
+            android:id="@+id/upload_Picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/upload_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Upload"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded_corner"
+            app:itemIconSize="30dp"
+            app:itemIconTint="@drawable/item_selector"
+            app:itemRippleColor="@android:color/transparent"
+            app:menu="@menu/bottom_menu" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <TextView
+        android:id="@+id/register_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer Register"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        android:src="@drawable/ic_baseline_account_circle_24"/>
+    <EditText
+        android:id="@+id/txtFName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:fontFamily="sans-serif-condensed"
+        android:textColorHint="@color/black"
+        />
+
+
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/black"
+        android:fontFamily="sans-serif-condensed"/>
+    <EditText
+        android:id="@+id/txtphone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:textColorHint="@color/black"
+        android:inputType="phone"
+        android:fontFamily="sans-serif-condensed"
+        />
+
+
+    <EditText
+        android:id="@+id/txtpassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignUP"
+        android:fontFamily="sans-serif-condensed"
+        android:backgroundTint="@color/black"
+        />
+    <TextView
+        android:id="@+id/txtlogin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? LogIn!"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed"
+        />
+
+
+</LinearLayout>
